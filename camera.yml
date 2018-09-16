@@ -1,0 +1,43 @@
+%YAML:1.0
+---
+calibration_time: "2018年01月26日 星期五 17时16分15秒"
+width: 13.0
+height: 6.0 
+offset_barrel: 5.5
+min_distance: 40.0
+max_distance: 500.0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 5.6829076284763210e+02, 0., 3.3933835588588761e+02, 0.,
+       5.6829076284763210e+02, 2.3827252724671612e+02, 0., 0., 1. ]
+distortion_coefficients: !!opencv-matrix
+   rows: 5
+   cols: 1
+   dt: d
+   data: [ -5.0186746367796953e-01, 2.8207105799920579e-01,
+       9.4105578341537575e-04, 3.3544494835887366e-03,
+       9.3490563419377976e-02 ]
+# from zhangshimin
+# camera_matrix: !!opencv-matrix
+#    rows: 3
+#    cols: 3
+#    dt: d
+#    data: [ 1.1586112744948248e+03, 0., 9.9561504566698977e+02, 0.,
+#        1.1586112744948248e+03, 5.4842720977393265e+02, 0., 0., 1. ]
+# distortion_coefficients: !!opencv-matrix
+#    rows: 5
+#    cols: 1
+#    dt: d
+#    data: [ -4.2876868601664248e-01, 2.4776905103494812e-01,
+#        8.1826469445614117e-03, -3.1470505296509136e-03,
+#        -8.6619718599011186e-02 ]
+cameraOrg : !!opencv-matrix
+    rows: 3
+    cols: 1
+    dt: d
+    data: [-8.0, 6, 12.0]
+alpha: 3.141592653589793
+beta: 3.141592653589793
+gamma: 0.0

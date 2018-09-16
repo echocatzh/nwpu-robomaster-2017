@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<opencv_storage>
+
+
+<!-- use for armordetector -->
+<!--目前发现的适合当前视频亮度的阈值-->
+<threshold>36</threshold>
+<!--敌机颜色，红色0 蓝色 1-->
+<enemy_color>0</enemy_color>
+<!--针对于单个轮廓来说，偏移垂直距离角度的大小-->
+<for_single_offset_angle>20</for_single_offset_angle>
+<!--针对于两个轮廓组成的装甲板区域，如果这个轮廓的对角斜率大于下面这个值，舍去-->
+<for_double_offset_angle>60</for_double_offset_angle>
+
+<!-- use for transform -->
+<!-- 相机标定参数 -->
+<camera_matrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1.1586112744948248e+03  0.  9.9561504566698977e+02  0. 
+       1.1586112744948248e+03  5.4842720977393265e+02  0.  0.  1. </data></camera_matrix>
+<distCo type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -4.2876868601664248e-01  2.4776905103494812e-01 
+       8.1826469445614117e-03  -3.1470505296509136e-03 
+       -8.6619718599011186e-02 </data></distCo>
+<!--相机坐标系原点在云台坐标系的坐标  -->
+<cameraOrg type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+   0. -7.5 12.0</data></cameraOrg>
+<alpha>0.0</alpha>
+<beta>0.0</beta>
+<gamma>0.0</gamma>
+<!-- small armor -->
+<width>13.0</width>
+<height>6.0</height>
+<offset_barrel>5.5</offset_barrel>
+<min_distance>10.0</min_distance>
+<max_distance>500.0</max_distance>
+</opencv_storage>
